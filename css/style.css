@@ -5,13 +5,13 @@
     text-decoration: none;
 }
 h4 {
-    font-size: 16px;
+    font-size: 20px;
     color: #480c16;
 }
 
 p {
     color: #000000;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /* Header */
@@ -75,6 +75,7 @@ header {
 /* MiselaneusRegion */
 
 .shoppingCarIcon {
+    
     height: 3.5vw;
     padding-left: 0.75vw;
     padding-right: 10vw;
@@ -115,18 +116,20 @@ nav {
 main { 
     display: flex;
     flex-direction: column;
+    background-image: url("../Sources/Imagens/Predio/IMG-20210821-WA0007.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 section {
-    
+    /*border: solid red 1px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid red 1px;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
 }
@@ -134,36 +137,43 @@ section {
 /* Products Segment*/
 
 .ProductsSection{
+    border: solid #e6a01e 0.25vw;
+    border-radius: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #e7e4d5;
+    background: #e9e6da;
     width: 100%;
     margin-top: 2.5vw;
     margin-bottom: 2.5vw;
 }
 
 .ProductsSectionTop{
+    border: solid #e6a01e 0.25vw;
+    border-radius: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #e7e4d5;
+    background: #e9e6da;
     width: 100%;
     margin-bottom: 2.5vw;
 }
 
 .ProductsSectionBottom{
+    border: solid #e6a01e 0.20vw;
+    border-radius: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #e7e4d5;
+    background: #e9e6da;
     width: 100%;
     margin-top: 2.5vw;
 }
 
 .mainProducts {
-    border: solid blue 1px;
+    /*border: solid blue 1px;*/
     background: #eeede7;
+    border-radius: 2.5%;
     width: 95%;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
@@ -174,8 +184,9 @@ section {
 }
 
 .itemH {
-    border: solid blue 1px;
+    /*border: solid blue 1px;*/
     background: #eeede7;
+    border-radius: 2.5%;
     margin-top: 2.5vw;
     display: flex;
     height: 5vw;
