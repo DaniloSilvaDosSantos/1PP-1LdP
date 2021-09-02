@@ -1,0 +1,4 @@
+redI: #770016
+redII: #480c16
+yellowI: #e9c121
+yellowII: #e6a01e
