@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,8 @@
     text-decoration: none;
 }
 h4 {
-    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
     color: #480c16;
 }
 
@@ -119,6 +122,7 @@ main {
     background-image: url("../Sources/Imagens/Predio/IMG-20210821-WA0007.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    width: 100%;
 }
 
 section {
@@ -160,7 +164,7 @@ section {
 }
 
 .ProductsSectionBottom{
-    border: solid #e6a01e 0.20vw;
+    border: solid #e6a01e 0.25vw;
     border-radius: 2%;
     display: flex;
     flex-direction: column;
@@ -186,7 +190,7 @@ section {
 .itemH {
     /*border: solid blue 1px;*/
     background: #eeede7;
-    border-radius: 2.5%;
+    border-radius: 10%;
     margin-top: 2.5vw;
     display: flex;
     height: 5vw;
@@ -196,7 +200,13 @@ section {
 }
 
 .mainItemTitle {
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(36, 36, 36);
     font-size: 28px;
+}
+
+.itemTitle {
+
 }
 
 .item {
@@ -226,11 +236,16 @@ section {
 }
 
 .itemName {
-    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color:#494949;
+    font-size: 16px;
 }
 
 .itemPrice {
-    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bolder;
 }
 
 /* Footer */
