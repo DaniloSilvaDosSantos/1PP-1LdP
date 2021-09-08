@@ -12,9 +12,27 @@ h4 {
     color: #480c16;
 }
 
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
 p {
     color: #000000;
     font-size: 20px;
+}
+
+.descriptionText{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #292929;
 }
 
 /* Header */
@@ -135,106 +153,163 @@ section {
     margin-bottom: 2.5%;
 }
 
-/* Products Segment*/
-
-.ProductsSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.mainContainer {
     background: #e9e6da;
-    width: 100%;
-    margin-top: 2.5vw;
-    margin-bottom: 2.5vw;
-}
-
-.ProductsSectionTop{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #e9e6da;
-    width: 100%;
-    margin-bottom: 2.5vw;
-}
-
-.ProductsSectionBottom{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #e9e6da;
-    width: 100%;
-    margin-top: 2.5vw;
-}
-
-.mainProducts {
-    /*border: solid blue 1px;*/
-    background: #eeede7;
-    border-radius: 2.5%;
-    width: 95%;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    justify-self: center;
-    align-self: center;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 1fr 2fr;
+    grid-template-areas: 
+    "h h p p"
+    "img img f f"
+    "img img f f"
+    "d d . ."
+    ;
 }
 
-.itemH {
-    /*border: solid blue 1px;*/
-    background: #eeede7;
-    border-radius: 5%;
-    margin-top: 2.5vw;
+.itemTitleConteaner {
+    grid-area: h;
     display: flex;
-    height: 5vw;
-    width: 95%;
     justify-content: center;
     align-items: center;
+    background-color: #eeede7;
+    border-radius: 10%;
+    width: 90%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 5%;
+    margin-right: 5%;  
 }
 
-.mainItemTitle {
-    font-family: 'Montserrat', sans-serif;
+.itemTitle {
+    font-family: Montserrat;
     color:rgb(36, 36, 36);
-    font-size: 28px;
+    font-size: 20px;
 }
 
-.item {
-    border: solid rgba(124, 124, 124, 0) 0.1vw;
+.imgContainer{
+    grid-area: img;
     display: flex;
-    padding-left: 4vw;
-    padding-right: 4vw;
-    padding-bottom: 2vw;
-    padding-top: 2vw;
+    justify-content: center;
     align-items: center;
+    background-color: #eeede7;
+    border-radius: 10%;
+    width: 90%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.imgItem {
+    width: 80%;
+    height: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+form{
+    grid-area: f;
+    background: #eeede7;
+    border-radius: 10%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
     flex-direction: column;
 }
 
-.item:hover {
-    /*border: solid#7c7c7c 0.1vw;*/
-    border: solid #e6a01e 0.1vw;
+legend {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.itemIMG {
-    width: 90%;
-    height: auto;
+.formTxt{
+    margin-left: 12.5%;
+    margin-right: 12.5%;
 }
 
-.itemIMG2 {
-    margin-top: 45%;
-    width: 100%;
-    height: auto;
+.formBox {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 2.5vw;
+    width: 20vw;
+    border: solid 0.2vw #e9c121;  
+    border-radius: 2.5%;
+    font-size:12px;
 }
 
-.itemName {
-    font-family: 'Montserrat', sans-serif;
-    color:#494949;
-    font-size: 16px;
+.formBox:hover {
+    border: solid 0.2vw #e6a01e
 }
 
-.itemPrice {
-    font-family: 'Times New Roman', Times, serif;
-    color: #000000;
-    font-size: 18px;
-    font-weight: bolder;
+.resuButtoms {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20vw;
+    margin-top: 1vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1vh;
+}
+
+.submitButtom {
+    width: 9vw;
+    border: solid 0.2vw #e9c121;  
+    border-radius: 5%;
+    font-size:16px;
+}
+
+.submitButtom:hover {
+    border: solid 0.2vw #e6a01e
+}
+
+.priceConteaner {
+    grid-area: p;
+    background: #eeede7;
+    border-radius: 10%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    margin-left:10%
+}
+
+.descriptionContainer {
+    grid-area: d;
+    background: #eeede7;
+    border-radius: 10%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.desTitleConteaner {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+
+.description {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* Footer */
@@ -243,6 +318,18 @@ footer {
     background: #770016;
     align-items: center;
     justify-content: space-between;
+}
+
+.backgroudHeaderSquareF {
+    background-color: #e9c121;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-right: solid #480c16 0.5vw;
+    border-top: solid #480c16 0.25vw;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footerContainer {
